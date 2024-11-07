@@ -7,8 +7,12 @@ TodoList.propTypes = {
   listTask: PropTypes.array,
 };
 
+TodoList.defaultProps = {
+  listTask: [],
+};
+
 const cx = classNames.bind(styles);
-function TodoList({ listTask = [] }) {
+function TodoList({ listTask }) {
   return (
     <>
       {listTask.map((taskItem) => (

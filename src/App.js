@@ -1,8 +1,9 @@
 import Todo from "./features/Todo";
+import Album from "./features/Album";
 function App() {
   return (
     <div>
-      <Todo />
+      <Album />
     </div>
   );
 }
